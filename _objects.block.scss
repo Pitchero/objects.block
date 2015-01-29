@@ -7,6 +7,7 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
+$inuit-object-namespace:    null !default;
 $inuit-block-namespace:     $inuit-namespace !default;
 
 $inuit-block-gutter:            $inuit-base-spacing-unit !default;
@@ -31,8 +32,8 @@ $inuit-enable-block--right:     false !default;
  * Stacked image-with-text object. A simple abstraction to cover a very commonly
  * occurring design pattern.
  */
-.#{$inuit-block-namespace}block,
-%#{$inuit-block-namespace}block {
+.#{$inuit-object-namespace}#{$inuit-block-namespace}block,
+%#{$inuit-object-namespace}#{$inuit-block-namespace}block {
     display: block;
 }
 
